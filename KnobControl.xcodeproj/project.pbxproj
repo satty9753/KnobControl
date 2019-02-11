@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		098718A92CBD657803625271 /* Pods_KnobControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D11AB508270614DA76985DD /* Pods_KnobControl.framework */; };
 		325FF040221159370019B637 /* KnobControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 325FF03E221159370019B637 /* KnobControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		325FF047221159620019B637 /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF046221159620019B637 /* Knob.swift */; };
+		325FF04922115B6B0019B637 /* KnobRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF04822115B6B0019B637 /* KnobRenderer.swift */; };
+		325FF04B22115BBA0019B637 /* RotationGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325FF04A22115BBA0019B637 /* RotationGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		325FF03B221159370019B637 /* KnobControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KnobControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		325FF03E221159370019B637 /* KnobControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KnobControl.h; sourceTree = "<group>"; };
 		325FF03F221159370019B637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		325FF046221159620019B637 /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		325FF04822115B6B0019B637 /* KnobRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobRenderer.swift; sourceTree = "<group>"; };
+		325FF04A22115BBA0019B637 /* RotationGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureRecognizer.swift; sourceTree = "<group>"; };
+		3DDEF83A54202632DEDBDCEB /* Pods-KnobControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnobControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-KnobControl/Pods-KnobControl.release.xcconfig"; sourceTree = "<group>"; };
+		8D11AB508270614DA76985DD /* Pods_KnobControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnobControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FBA3676C05572CDE8E5C34 /* Pods-KnobControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnobControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KnobControl/Pods-KnobControl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098718A92CBD657803625271 /* Pods_KnobControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +43,8 @@
 			children = (
 				325FF03D221159370019B637 /* KnobControl */,
 				325FF03C221159370019B637 /* Products */,
+				A9B0515F1111B8E9B582A7A6 /* Pods */,
+				6FFB3138B9B8FF1FA7312CD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,9 +60,29 @@
 			isa = PBXGroup;
 			children = (
 				325FF03E221159370019B637 /* KnobControl.h */,
+				325FF046221159620019B637 /* Knob.swift */,
+				325FF04822115B6B0019B637 /* KnobRenderer.swift */,
+				325FF04A22115BBA0019B637 /* RotationGestureRecognizer.swift */,
 				325FF03F221159370019B637 /* Info.plist */,
 			);
 			path = KnobControl;
+			sourceTree = "<group>";
+		};
+		6FFB3138B9B8FF1FA7312CD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D11AB508270614DA76985DD /* Pods_KnobControl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9B0515F1111B8E9B582A7A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8FBA3676C05572CDE8E5C34 /* Pods-KnobControl.debug.xcconfig */,
+				3DDEF83A54202632DEDBDCEB /* Pods-KnobControl.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 325FF043221159370019B637 /* Build configuration list for PBXNativeTarget "KnobControl" */;
 			buildPhases = (
+				7F68DEB4623C6A4AA1D73F3C /* [CP] Check Pods Manifest.lock */,
 				325FF036221159370019B637 /* Headers */,
 				325FF037221159370019B637 /* Sources */,
 				325FF038221159370019B637 /* Frameworks */,
@@ -125,11 +159,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7F68DEB4623C6A4AA1D73F3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnobControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		325FF037221159370019B637 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				325FF04922115B6B0019B637 /* KnobRenderer.swift in Sources */,
+				325FF04B22115BBA0019B637 /* RotationGestureRecognizer.swift in Sources */,
+				325FF047221159620019B637 /* Knob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +318,7 @@
 		};
 		325FF044221159370019B637 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8FBA3676C05572CDE8E5C34 /* Pods-KnobControl.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -285,6 +344,7 @@
 		};
 		325FF045221159370019B637 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DDEF83A54202632DEDBDCEB /* Pods-KnobControl.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

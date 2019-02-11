@@ -1,0 +1,19 @@
+{
+  "name": "KnobControl",
+  "version": "1.0.0",
+  "summary": "A knob control like the UISlider, but in a circular form.",
+  "description": "The knob control is a completely customizable widget that can be used in any iOS app. It also plays a little victory fanfare.",
+  "homepage": "http://raywenderlich.com",
+  "license": "MIT",
+  "authors": {
+    "Michelle Chen": "michelle.chen@iit.com.hk"
+  },
+  "platforms": {
+    "ios": "12.1"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "KnobControl",
+  "swift_version": "4.2"
+}
